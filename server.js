@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 
 // konfigurasi mongo
-mongoose.connect('mongodb://127.0.0.1:27017/kelas_blog' {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect('mongodb://127.0.0.1:27017/kelas_blog', {useNewUrlParser: true, useUnifiedTopology: true})
 
 app.listen(2000, () => {
     console.log('run on port 2000')
